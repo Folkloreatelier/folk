@@ -1,10 +1,12 @@
 import program from 'commander';
 
-import addDefaultOptions from './lib/addDefaultOptions';
+import addDefaultOptions from '../lib/addDefaultOptions';
 
 addDefaultOptions(program)
-    .description('Get the status of an application')
+    .option('-y, --yes', 'confirm')
     .action((...args) => {
         console.log(args);
     })
     .parse(process.argv);
+
+console.log(program.config);

@@ -3,14 +3,19 @@
     "version": "1.0.0",
     "description": "",
     "main": "lib/index.js",
+    "bin": {
+        "folk": "./lib/cli/index.js"
+    },
     "scripts": {
-        "start": "babel-node ./src/folk.js",
+        "start": "babel-node ./src/cli/index.js",
         "build": "babel src --out-dir lib"
     },
     "author": "Folklore <info@atelierfolklore.ca>",
     "license": "ISC",
     "dependencies": {
-        "commander": "^2.17.1"
+        "commander": "^2.17.1",
+        "download-git-repo": "^1.1.0",
+        "github-api": "^3.0.0"
     },
     "devDependencies": {
         "@babel/cli": "^7.2.3",

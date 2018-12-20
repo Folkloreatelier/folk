@@ -1,11 +1,9 @@
 #!/usr/bin/env node
 
 import program from 'commander';
-import packageJson from '../package.json';
+import packageJson from '../../package.json';
 
-import addDefaultOptions from './lib/addDefaultOptions';
-
-addDefaultOptions(program)
+program
     .version(packageJson.version)
     .command('bootstrap', 'Bootstrap an app', {
         isDefault: true,
