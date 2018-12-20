@@ -1,0 +1,22 @@
+{
+    "name": "folk",
+    "version": "1.0.0",
+    "description": "",
+    "main": "tools/index.js",
+    "scripts": {
+        "start": "babel-node ./tools/folk.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "commander": "^2.17.1"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.2.3",
+        "@babel/core": "^7.2.2",
+        "@babel/node": "^7.2.2",
+        "@babel/preset-env": "^7.2.3",
+        "eslint": "^5.10.0",
+        "eslint-plugin-import": "^2.14.0"
+    }
+}

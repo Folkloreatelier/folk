@@ -1,0 +1,24 @@
+{
+    "name": "folkloreinc.ca",
+
+    "source": {
+        "type": "laravel",
+        "options": {
+            "version": "5.4",
+            "php": "7.1",
+            "type": "git",
+            "git": "https://github.com/Folkloreatelier/folk-test-laravel.git"
+        }
+    },
+
+    "targets": [
+        {
+            "name": "local",
+            "type": "homestead",
+            "options": {
+
+            },
+            "env": {}
+        }
+    ]
+}
