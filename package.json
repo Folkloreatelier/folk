@@ -2,11 +2,12 @@
     "name": "folk",
     "version": "1.0.0",
     "description": "",
-    "main": "tools/index.js",
+    "main": "lib/index.js",
     "scripts": {
-        "start": "babel-node ./tools/folk.js"
+        "start": "babel-node ./src/folk.js",
+        "build": "babel src --out-dir lib"
     },
-    "author": "",
+    "author": "Folklore <info@atelierfolklore.ca>",
     "license": "ISC",
     "dependencies": {
         "commander": "^2.17.1"
